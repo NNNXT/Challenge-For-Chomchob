@@ -69,18 +69,21 @@ class _HomeState extends State<Home> with TickerProviderStateMixin {
           } else {
             return Row(
               children: [
-                Container(
-                  margin: const EdgeInsets.only(bottom: 20),
-                  width: size.width * 0.1625,
-                  height: size.height,
-                  color: Colors.white,
-                  child: Align(
-                    alignment: Alignment.bottomCenter,
-                    child: Button(
-                      controller: provider.pinkController,
-                      colorIsPink: true,
-                      showText: provider.showText,
-                      orientation: orientation,
+                GestureDetector(
+                  onTap: () => provider.showTutorial('กดปุ่มสีที่ตรงกัน\nค้างไว้ 2 วินาที\nเพื่อทำลาย Block'),
+                  child: Container(
+                    margin: const EdgeInsets.only(bottom: 20),
+                    width: size.width * 0.1625,
+                    height: size.height,
+                    color: Colors.white,
+                    child: Align(
+                      alignment: Alignment.bottomCenter,
+                      child: Button(
+                        controller: provider.pinkController,
+                        colorIsPink: true,
+                        showText: provider.showText,
+                        orientation: orientation,
+                      ),
                     ),
                   ),
                 ),
@@ -89,18 +92,21 @@ class _HomeState extends State<Home> with TickerProviderStateMixin {
                   color: AppColors.grey,
                   child: box(size,provider,orientation),
                 ),
-                Container(
-                  margin: const EdgeInsets.only(bottom: 20),
-                  width: size.width * 0.1625,
-                  height: size.height,
-                  color: Colors.white,
-                  child: Align(
-                    alignment: Alignment.bottomCenter,
-                    child: Button(
-                      controller: provider.blueController,
-                      colorIsPink: false,
-                      showText: provider.showText,
-                      orientation: orientation,
+                GestureDetector(
+                  onTap: () => provider.showTutorial('กดปุ่มสีที่ตรงกัน\nค้างไว้ 2 วินาที\nเพื่อทำลาย Block'),
+                  child: Container(
+                    margin: const EdgeInsets.only(bottom: 20),
+                    width: size.width * 0.1625,
+                    height: size.height,
+                    color: Colors.white,
+                    child: Align(
+                      alignment: Alignment.bottomCenter,
+                      child: Button(
+                        controller: provider.blueController,
+                        colorIsPink: false,
+                        showText: provider.showText,
+                        orientation: orientation,
+                      ),
                     ),
                   ),
                 )
