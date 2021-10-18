@@ -111,11 +111,13 @@ class HomeProvider with ChangeNotifier, DiagnosticableTreeMixin {
   onTapUp(bool colorIsPink) {
     if (colorIsPink) {
       userTapPink = false;
+      userTabPinkComplete = false;
       if (pinkController.status == AnimationStatus.forward) {
         pinkController.reverse();
       }
     } else {
       userTapBlue = false;
+      userTabPinkComplete = false;
       if (blueController.status == AnimationStatus.forward) {
         blueController.reverse();
       }
