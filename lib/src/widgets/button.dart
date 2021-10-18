@@ -9,11 +9,13 @@ class Button extends StatelessWidget {
     required this.controller,
     required this.colorIsPink,
     required this.showText,
+    required this.orientation
   }) : super(key: key);
 
   final AnimationController controller;
   final bool colorIsPink;
   final String showText;
+  final Orientation orientation;
 
   @override
   Widget build(BuildContext context) {
@@ -30,20 +32,20 @@ class Button extends StatelessWidget {
               shape: BoxShape.circle,
               border: Border.all(color: Colors.black)
             ),
-            height: size.height * 0.1,
-            width: size.height * 0.1,
+            height: orientation == Orientation.portrait ? size.height * 0.1 : size.width * 0.1,
+            width: orientation == Orientation.portrait ? size.height * 0.1 : size.width * 0.1,
             child: Center(
               child: Text(
                 showText,
                 style: TextStyle(
-                  fontSize: size.height * 0.04
+                  fontSize: orientation == Orientation.portrait ? size.height * 0.04 : size.width * 0.04
                 )
               )
             ),
           ),
           SizedBox(
-            height: size.height * 0.1,
-            width: size.height * 0.1,
+            height: orientation == Orientation.portrait ? size.height * 0.1 : size.width * 0.1,
+            width: orientation == Orientation.portrait ? size.height * 0.1 : size.width * 0.1,
             child: CircularProgressIndicator(
               value: controller.value,
               valueColor: const AlwaysStoppedAnimation<Color>(Colors.orange),
