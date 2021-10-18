@@ -1,16 +1,13 @@
-# test
+# Tower box
 
-A new Flutter project.
+## Gameplay
+[![IMAGE ALT TEXT HERE](https://www.img.in.th/images/e67d7ada898735e2f20d87ad39fe5993.png)](https://www.youtube.com/watch?v=oB6LLSIZCoI&ab_channel=NXTTZ)
+## How to play
+- กดปุ่มตามสีที่ลูกศรชี้อยู่เป็นเวลา 2 วินาที
+- ถ้ากดสีถูกปุ่มจะเปลี่ยนเป็น 🎉
+- ถ้ากดผิดสีปุ่มจะเปลี่ยนเป็น 😭
+- แต่ไม่ว่าคุณจะกดถูกหรือผิดสักพักปุ่มก็จะกลับมาเป็น 🤔 อยู่ดี
+- เมื่อคุณกดจนไปถึงด่านสุดท้ายคุณจะเจอกับรูปร่างของกล่องที่เปลี่ยนไป แต่ก็นะคุณก็แค่กดตามที่ Tutorial เด้งมาบอก
+- เมื่อคุณผ่านด่านสุดท้ายแล้ว จะมี Dialog เด้งขึ้นมาถ้าคุณอยากเล่นใหม่อีกครั้งก็กดปุ่ม Reset ได้เลย
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
